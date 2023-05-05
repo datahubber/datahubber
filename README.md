@@ -1,12 +1,6 @@
-### Hi there 👋
+<h1 align="center">Hi 👋, I'm Mian Wang</h1>
+<h3 align="center">A passionate frontend developer from India</h3>
 
-<!--
-**datahubber/datahubber** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on Kaggle
-- 🌱 I’m currently learning Machine Learning
-
--->
-![datahubber's GitHub stats](https://github-readme-stats.vercel.app/api?username=datahubber&show_icons=true)
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+</p>
