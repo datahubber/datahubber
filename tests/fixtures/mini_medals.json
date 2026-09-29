@@ -1,0 +1,64 @@
+{
+  "as_of": "2000-01-31",
+  "kaggle_profile": "https://www.kaggle.com/example",
+  "tier": "Competitions Expert",
+  "competitions_rank": {
+    "current": 500,
+    "of_about": 100000,
+    "peak": 400
+  },
+  "sources": {
+    "note": "synthetic fixture for tests"
+  },
+  "domains": [
+    {
+      "id": "nlp",
+      "label": "Text & speech"
+    },
+    {
+      "id": "vision",
+      "label": "Vision"
+    },
+    {
+      "id": "empty",
+      "label": "Unused domain"
+    }
+  ],
+  "medals": [
+    {
+      "slug": "comp-b",
+      "title": "Comp B",
+      "short": "B",
+      "medal": "bronze",
+      "rank": 90,
+      "teams": 1000,
+      "entry": "solo",
+      "end_date": "1999-05-01",
+      "domain": "nlp",
+      "contribution": "Built the <post-processor> | tuned it"
+    },
+    {
+      "slug": "comp-a",
+      "title": "Comp A & Co",
+      "short": "A & Co",
+      "medal": "gold",
+      "rank": 3,
+      "teams": 500,
+      "entry": "team",
+      "end_date": "1999-12-31",
+      "domain": "nlp",
+      "repo": "comp-a-solution"
+    },
+    {
+      "slug": "comp-c",
+      "title": "Comp C",
+      "short": "C",
+      "medal": "silver",
+      "rank": 40,
+      "teams": 1000,
+      "entry": "solo",
+      "end_date": "1998-02-28",
+      "domain": "vision"
+    }
+  ]
+}

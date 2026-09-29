@@ -1,0 +1,167 @@
+{
+  "as_of": "2026-09-29",
+  "kaggle_profile": "https://www.kaggle.com/mianwang1024",
+  "tier": "Competitions Master",
+  "competitions_rank": {
+    "current": 169,
+    "of_about": 217000,
+    "peak": 139
+  },
+  "sources": {
+    "rank_and_teams": "Live Kaggle profile and GetCompetition (userRank, teamCount), read 2026-09-29",
+    "end_date": "GetCompetition deadline field (UTC date), read 2026-09-29",
+    "entry": "Kaggle team membership for each competition (solo = one-person team)"
+  },
+  "domains": [
+    {
+      "id": "llm-nlp",
+      "label": "LLM & NLP"
+    },
+    {
+      "id": "vision",
+      "label": "Vision & 3D imaging"
+    },
+    {
+      "id": "time-series",
+      "label": "Time series & signals"
+    },
+    {
+      "id": "quant",
+      "label": "Quant finance"
+    },
+    {
+      "id": "tabular",
+      "label": "Tabular"
+    }
+  ],
+  "medals": [
+    {
+      "slug": "wsdm-cup-multilingual-chatbot-arena",
+      "title": "WSDM Cup - Multilingual Chatbot Arena",
+      "short": "WSDM Cup: Chatbot Arena",
+      "medal": "gold",
+      "rank": 5,
+      "teams": 950,
+      "entry": "team",
+      "end_date": "2025-03-10",
+      "domain": "llm-nlp",
+      "repo": "wsdm-cup-5th-place-llm-judge",
+      "contribution": "Owned the inference notebook behind one of the two final submissions: vLLM serving of the fine-tuned Qwen2.5-14B judge on 2×T4, plus an uncertainty-gated post-processor. Wrote the public solution write-up and presented it at the winners' call."
+    },
+    {
+      "slug": "deep-past-initiative-machine-translation",
+      "title": "Deep Past Challenge - Translate Akkadian to English",
+      "short": "Deep Past: Akkadian to English",
+      "medal": "bronze",
+      "rank": 252,
+      "teams": 2674,
+      "entry": "solo",
+      "end_date": "2026-03-23",
+      "domain": "llm-nlp",
+      "contribution": "Multi-candidate decoding and MBR reranking for ByT5 Akkadian-to-English translation, tuned through a logged ablation series."
+    },
+    {
+      "slug": "isic-2024-challenge",
+      "title": "ISIC 2024 - Skin Cancer Detection with 3D-TBP",
+      "short": "ISIC 2024: Skin Cancer Detection",
+      "medal": "silver",
+      "rank": 99,
+      "teams": 2739,
+      "entry": "solo",
+      "end_date": "2024-09-06",
+      "domain": "vision",
+      "contribution": "Final ensemble of three gradient-boosted tabular and image-model pipelines."
+    },
+    {
+      "slug": "vesuvius-challenge-ink-detection",
+      "title": "Vesuvius Challenge - Ink Detection",
+      "short": "Vesuvius Challenge: Ink Detection",
+      "medal": "silver",
+      "rank": 46,
+      "teams": 1249,
+      "entry": "team",
+      "end_date": "2023-06-14",
+      "domain": "vision"
+    },
+    {
+      "slug": "csiro-biomass",
+      "title": "CSIRO - Image2Biomass Prediction",
+      "short": "CSIRO: Image2Biomass",
+      "medal": "bronze",
+      "rank": 197,
+      "teams": 3805,
+      "entry": "solo",
+      "end_date": "2026-01-28",
+      "domain": "vision",
+      "contribution": "Re-weighted the SigLIP / DINOv3 model blend and added a mass-balance projection so the predicted biomass components stay consistent."
+    },
+    {
+      "slug": "byu-locating-bacterial-flagellar-motors-2025",
+      "title": "BYU - Locating Bacterial Flagellar Motors 2025",
+      "short": "BYU: Flagellar Motors (3D)",
+      "medal": "bronze",
+      "rank": 62,
+      "teams": 1136,
+      "entry": "solo",
+      "end_date": "2025-06-04",
+      "domain": "vision"
+    },
+    {
+      "slug": "nfl-big-data-bowl-2026-prediction",
+      "title": "NFL Big Data Bowl 2026 - Prediction",
+      "short": "NFL Big Data Bowl 2026",
+      "medal": "silver",
+      "rank": 66,
+      "teams": 1899,
+      "entry": "solo",
+      "end_date": "2026-01-06",
+      "domain": "time-series"
+    },
+    {
+      "slug": "hms-harmful-brain-activity-classification",
+      "title": "HMS - Harmful Brain Activity Classification",
+      "short": "HMS: Harmful Brain Activity (EEG)",
+      "medal": "bronze",
+      "rank": 200,
+      "teams": 2767,
+      "entry": "team",
+      "end_date": "2024-04-08",
+      "domain": "time-series"
+    },
+    {
+      "slug": "jane-street-real-time-market-data-forecasting",
+      "title": "Jane Street Real-Time Market Data Forecasting",
+      "short": "Jane Street: Market Forecasting",
+      "medal": "bronze",
+      "rank": 259,
+      "teams": 3757,
+      "entry": "team",
+      "end_date": "2025-07-12",
+      "domain": "quant"
+    },
+    {
+      "slug": "hull-tactical-market-prediction",
+      "title": "Hull Tactical - Market Prediction",
+      "short": "Hull Tactical: Market Prediction",
+      "medal": "bronze",
+      "rank": 366,
+      "teams": 3677,
+      "entry": "solo",
+      "end_date": "2026-06-25",
+      "domain": "quant",
+      "repo": "hull-tactical-market-timing",
+      "contribution": "Full pipeline: GRU, attention-GRU and MLP direction classifiers on leak-safe lag features, with percentile-calibrated leverage."
+    },
+    {
+      "slug": "equity-post-HCT-survival-predictions",
+      "title": "CIBMTR - Equity in post-HCT Survival Predictions",
+      "short": "CIBMTR: post-HCT Survival",
+      "medal": "bronze",
+      "rank": 322,
+      "teams": 3325,
+      "entry": "solo",
+      "end_date": "2025-03-05",
+      "domain": "tabular"
+    }
+  ]
+}
