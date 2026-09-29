@@ -8,8 +8,8 @@ Kaggle Competitions Master; team gold (5th of 950) for predicting which of two c
 | Repo | What it is | Headline |
 |---|---|---|
 | [agent-fleet-ops](https://github.com/datahubber/agent-fleet-ops) | Case study: an ops layer that lets several autonomous LLM coding agents share scarce compute | Command guardrail: recall 0.982, precision 0.953 on a 446-command dev set of real agent commands |
-| [wsdm-cup-5th-place-llm-judge](https://github.com/datahubber/wsdm-cup-5th-place-llm-judge) | Pairwise LLM judge for human preference. Team of 5: a teammate trained the judge; I adapted the vLLM inference and wrote an uncertainty-gated tie-break | Gold, 5 / 950 |
-| [hull-tactical-market-timing](https://github.com/datahubber/hull-tactical-market-timing) | Daily market-timing models and position sizing. My own competition code, rewritten with walk-forward evaluation | Solo bronze, 366 / 3,677 |
+| [wsdm-cup-5th-place-llm-judge](https://github.com/datahubber/wsdm-cup-5th-place-llm-judge) | Pairwise LLM judge for human preference (team of 5). I owned the vLLM inference behind a final submission and the uncertainty-gated post-processing, and wrote the public solution write-up | Gold, 5 / 950 |
+| [hull-tactical-market-timing](https://github.com/datahubber/hull-tactical-market-timing) | Daily market-timing models and position sizing, rebuilt with purged walk-forward evaluation and no-lookahead tests | Solo bronze, 366 / 3,677 |
 
 These repos were rebuilt in 2026 with AI coding agents working under my direction.
 
