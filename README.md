@@ -49,4 +49,4 @@ These repos were rebuilt in 2026 with AI coding agents working under my directio
 
 **Experience:** Senior ML engineer at Onity (since Sep 2025). Previously Microsoft CoreAI (Prompt Shields, 2025), Corning (ML engineer, computer vision, 2025) and Mass General Hospital (2024).
 
-[Kaggle](https://www.kaggle.com/mianwang1024) · [Hugging Face](https://huggingface.co/AlbertWang8192) · [LinkedIn](https://www.linkedin.com/in/mianwang2026/) · [Medal certificates](https://github.com/datahubber/Certificates)
+[Kaggle](https://www.kaggle.com/mianwang1024) · [LinkedIn](https://www.linkedin.com/in/mianwang2026/) · [Medal certificates](https://github.com/datahubber/Certificates)
