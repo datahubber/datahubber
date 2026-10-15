@@ -9,9 +9,9 @@ is computed here so there is one source of truth.
 from __future__ import annotations
 
 import json
-import math
 from dataclasses import dataclass
 from datetime import date
+from decimal import ROUND_HALF_UP, Decimal
 from pathlib import Path
 
 MEDALS = ("gold", "silver", "bronze")
@@ -73,10 +73,11 @@ class Board:
 
 
 def top_pct(rank: int, teams: int) -> float:
-    """Rank as a percentage of teams, rounded UP to 0.1 so it never flatters."""
+    """Rank as a percentage of teams, rounded half up to 0.1 (exact decimal, no float ties)."""
     if not 1 <= rank <= teams:
         raise ValueError(f"rank {rank} outside 1..{teams}")
-    return math.ceil(1000 * rank / teams - 1e-9) / 10
+    pct = Decimal(100 * rank) / Decimal(teams)
+    return float(pct.quantize(Decimal("0.1"), rounding=ROUND_HALF_UP))
 
 
 def compact_count(n: int) -> str:

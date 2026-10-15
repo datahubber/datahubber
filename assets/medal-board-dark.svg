@@ -44,7 +44,7 @@
 <text x="440" y="108" class="s2">Team</text>
 <circle cx="664.2" cy="104" r="5.5" fill="#d6a21c" stroke="#0d1117" stroke-width="2"/>
 <text x="578" y="108" class="num" text-anchor="end">5 / 950</text>
-<text x="632" y="108" class="s2 num" text-anchor="end">0.6%</text>
+<text x="632" y="108" class="s2 num" text-anchor="end">0.5%</text>
 <circle cx="112.0" cy="128" r="5" fill="#c8643a"/>
 <text x="122" y="132" class="s2">Bronze</text>
 <text x="176" y="132" class="">Deep Past: Akkadian to English</text>
@@ -52,7 +52,7 @@
 <text x="440" y="132" class="s2">Solo</text>
 <circle cx="803.0" cy="128" r="5.5" fill="#c8643a" stroke="#0d1117" stroke-width="2"/>
 <text x="578" y="132" class="num" text-anchor="end">252 / 2,674</text>
-<text x="632" y="132" class="s2 num" text-anchor="end">9.5%</text>
+<text x="632" y="132" class="s2 num" text-anchor="end">9.4%</text>
 <circle cx="112.0" cy="162" r="5" fill="#c8643a"/>
 <text x="122" y="166" class="s2">Bronze</text>
 <text x="176" y="166" class="">Kaggriculture: Farm-Economy Sim</text>
@@ -68,7 +68,7 @@
 <text x="440" y="200" class="s2">Solo</text>
 <circle cx="712.4" cy="196" r="5.5" fill="#a7b0bb" stroke="#0d1117" stroke-width="2"/>
 <text x="578" y="200" class="num" text-anchor="end">99 / 2,739</text>
-<text x="632" y="200" class="s2 num" text-anchor="end">3.7%</text>
+<text x="632" y="200" class="s2 num" text-anchor="end">3.6%</text>
 <circle cx="112.0" cy="220" r="5" fill="#a7b0bb"/>
 <text x="122" y="224" class="s2">Silver</text>
 <text x="176" y="224" class="">Vesuvius Challenge: Ink Detection</text>
@@ -116,7 +116,7 @@
 <text x="440" y="354" class="s2">Team</text>
 <circle cx="768.8" cy="350" r="5.5" fill="#c8643a" stroke="#0d1117" stroke-width="2"/>
 <text x="578" y="354" class="num" text-anchor="end">200 / 2,767</text>
-<text x="632" y="354" class="s2 num" text-anchor="end">7.3%</text>
+<text x="632" y="354" class="s2 num" text-anchor="end">7.2%</text>
 <circle cx="112.0" cy="384" r="5" fill="#c8643a"/>
 <text x="122" y="388" class="s2">Bronze</text>
 <text x="176" y="388" class="">Jane Street: Market Forecasting</text>
@@ -144,6 +144,6 @@
 <text x="656" y="470" class="tick num" text-anchor="middle">0%</text>
 <text x="734" y="470" class="tick num" text-anchor="middle">5%</text>
 <text x="812" y="470" class="tick num" text-anchor="middle">10%</text>
-<text x="0" y="496" class="foot">Top % = private-leaderboard rank ÷ teams, rounded up. Lines at 5% and 10%: Kaggle's silver and bronze cutoffs for competitions with 1,000+ teams.</text>
+<text x="0" y="496" class="foot">Top % = private-leaderboard rank ÷ teams, rounded to 0.1. Lines at 5% and 10%: Kaggle's silver and bronze cutoffs for competitions with 1,000+ teams.</text>
 </g>
 </svg>

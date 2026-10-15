@@ -9,11 +9,12 @@ FIXTURE = Path(__file__).parent / "fixtures" / "mini_medals.json"
 REAL = Path(__file__).parent.parent / "data" / "kaggle_medals.json"
 
 
-def test_top_pct_rounds_up_never_flatters():
-    assert top_pct(5, 950) == 0.6  # 0.526 % -> 0.6 %
+def test_top_pct_rounds_half_up_to_one_decimal():
+    assert top_pct(5, 950) == 0.5  # 0.526 % -> 0.5 %
+    assert top_pct(252, 2674) == 9.4  # 9.424 % -> 9.4 %
     assert top_pct(366, 3677) == 10.0  # 9.954 % -> 10.0 %
     assert top_pct(100, 1000) == 10.0  # exact values stay exact
-    assert top_pct(1, 1000) == 0.1
+    assert top_pct(3, 2000) == 0.2  # exact tie 0.15 % rounds up, no float error
 
 
 @pytest.mark.parametrize("rank,teams", [(0, 10), (11, 10)])

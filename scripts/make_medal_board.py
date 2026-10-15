@@ -155,7 +155,7 @@ def row(m: Medal, y: float, t: Theme) -> list[str]:
         text(X_NAME, base, m.short, ""),
         text(X_YEAR, base, str(m.year), "s2 num"),
         text(X_ENTRY, base, m.entry.capitalize(), "s2"),
-        # exact placement for the dot; the text column shows the rounded-up value
+        # exact placement for the dot; the text column shows the rounded value
         dot(x_of(100 * m.rank / m.teams), mid, 5.5, t.medal[m.medal], ring=t.surface),
         text(X_RANK_END, base, f"{m.rank:,} / {m.teams:,}", "num", "end"),
         text(X_TOP_END, base, f"{m.top_pct:.1f}%", "s2 num", "end"),
@@ -187,7 +187,7 @@ def render_svg(board: Board, t: Theme) -> str:
         text(
             X_DOMAIN,
             foot_y,
-            "Top % = private-leaderboard rank ÷ teams, rounded up. Lines at 5% and 10%: "
+            "Top % = private-leaderboard rank ÷ teams, rounded to 0.1. Lines at 5% and 10%: "
             "Kaggle's silver and bronze cutoffs for competitions with 1,000+ teams.",
             "foot",
         ),
