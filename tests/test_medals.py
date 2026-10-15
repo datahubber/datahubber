@@ -74,9 +74,9 @@ def test_markdown_table_has_eight_columns_and_escapes_text():
 
 def test_real_data_matches_profile_summary():
     board = load(REAL)
-    assert len(board.medals) == 11
-    assert (board.count("gold"), board.count("silver"), board.count("bronze")) == (1, 3, 7)
-    assert sum(m.entry == "solo" for m in board.medals) == 7
+    assert len(board.medals) == 13
+    assert (board.count("gold"), board.count("silver"), board.count("bronze")) == (1, 3, 9)
+    assert sum(m.entry == "solo" for m in board.medals) == 8
     assert {m.domain for m in board.medals} == {d for d, _ in board.domains}
     assert all(m.contribution for m in board.medals if m.repo)
     with_repo = sorted(m.slug for m in board.medals if m.repo)

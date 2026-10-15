@@ -14,7 +14,9 @@ def test_svg_is_well_formed_and_has_one_plot_dot_per_medal():
     for theme in (mb.LIGHT, mb.DARK):
         root = ET.fromstring(mb.render_svg(board, theme))
         assert root.tag == f"{SVG}svg"
-        circles = root.findall(f"{SVG}circle")
+        # opaque background in the page colour, so no checkerboard shows through
+        assert root.find(f"{SVG}rect").get("fill") == theme.surface
+        circles = list(root.iter(f"{SVG}circle"))
         # 3 legend dots + (medal-column dot + plot dot) per row
         assert len(circles) == 3 + 2 * len(board.medals)
         texts = "".join(t.text or "" for t in root.iter(f"{SVG}text"))
@@ -57,7 +59,7 @@ def test_picture_alt_text_comes_from_the_data():
     pic = mb.picture(board)
     assert "1 gold, 1 silver, 1 bronze" in pic
     assert "rank 500 of about 100k, peak 400, checked 2000-01-31" in pic
-    assert pic.count("<source") == 2 and 'width="830"' in pic
+    assert pic.count("<source") == 2 and 'width="870"' in pic
 
 
 def test_svg_footnote_explains_top_pct_and_desc_lists_medals():

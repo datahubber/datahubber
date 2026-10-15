@@ -32,7 +32,7 @@ FONT = "-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,
 @dataclass(frozen=True)
 class Theme:
     name: str
-    surface: str  # page background the transparent SVG sits on (used for dot rings)
+    surface: str  # solid background, GitHub's page colour; also the dot rings
     ink: str  # primary text
     ink2: str  # secondary text
     ink3: str  # muted text: headers, ticks, footnote
@@ -62,8 +62,9 @@ DARK = Theme(
     medal={"gold": "#d6a21c", "silver": "#a7b0bb", "bronze": "#c8643a"},
 )
 
-# Layout in px. The board is drawn for an 830 px wide README column.
-W = 830
+# Layout in px. The board is drawn for an 830 px wide README column, inside a PAD margin
+# so it also reads well opened on its own (GitHub shows transparent images on a checkerboard).
+W, PAD = 830, 20
 X_DOMAIN, X_DOT, X_NAME, X_YEAR, X_ENTRY = 0, 112, 176, 402, 440
 X_RANK_END, X_TOP_END = 578, 632
 X_PLOT0, X_PLOT1, PLOT_MAX = 656, 812, 10.0  # x of 0 % and of PLOT_MAX %
@@ -170,11 +171,14 @@ def render_svg(board: Board, t: Theme) -> str:
             y += GROUP_GAP / 2
             body.append(line(0, y, W, y, t.rule))
             y += GROUP_GAP / 2
-        for j, part in enumerate(wrap(label)):
+        lines = wrap(label)
+        for j, part in enumerate(lines):
             body.append(text(X_DOMAIN, y + 16 + 15 * j, part, "dom"))
+        label_bottom = y + 16 + 15 * (len(lines) - 1) + 8
         for m in medals:
             rows += row(m, y, t)
             y += ROW_H
+        y = max(y, label_bottom)  # a one-row group still fits a two-line label
     rows_bottom = y
     grid = [line(x_of(p), ROWS_TOP - 2, x_of(p), rows_bottom + 2, t.grid) for p in (0, 5, 10)]
     ticks = [text(x_of(p), rows_bottom + 16, f"{p}%", "tick num", "middle") for p in (0, 5, 10)]
@@ -188,7 +192,7 @@ def render_svg(board: Board, t: Theme) -> str:
             "foot",
         ),
     ]
-    h = foot_y + 10
+    h = foot_y + 10 + 2 * PAD
     desc = "; ".join(
         f"{m.medal} {m.title} {m.rank}/{m.teams} {m.entry} {m.year}"
         for _, ms in board.grouped()
@@ -196,16 +200,19 @@ def render_svg(board: Board, t: Theme) -> str:
     )
     return "\n".join(
         [
-            f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{h:g}" '
-            f'viewBox="0 0 {W} {h:g}" role="img" aria-labelledby="t d">',
+            f'<svg xmlns="http://www.w3.org/2000/svg" width="{W + 2 * PAD}" height="{h:g}" '
+            f'viewBox="0 0 {W + 2 * PAD} {h:g}" role="img" aria-labelledby="t d">',
             f'<title id="t">Kaggle {escape(board.tier)}: {len(board.medals)} medals</title>',
             f'<desc id="d">{escape(desc)}</desc>',
             style(t),
+            f'<rect width="100%" height="100%" fill="{t.surface}"/>',
+            f'<g transform="translate({PAD},{PAD})">',
             *grid,
             *body,
             *rows,
             *ticks,
             *foot,
+            "</g>",
             "</svg>",
             "",
         ]
@@ -228,7 +235,7 @@ def picture(board: Board) -> str:
         f'  <source media="(prefers-color-scheme: {name})" srcset="assets/medal-board-{name}.svg">'
         for name in ("dark", "light")
     ]
-    img = f'  <img alt="{alt}" src="assets/medal-board-light.svg" width="{W}">'
+    img = f'  <img alt="{alt}" src="assets/medal-board-light.svg" width="{W + 2 * PAD}">'
     return "\n".join(["<picture>", *sources, img, "</picture>"])
 
 
