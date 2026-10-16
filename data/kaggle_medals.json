@@ -1,15 +1,15 @@
 {
-  "as_of": "2026-10-14",
+  "as_of": "2026-10-16",
   "kaggle_profile": "https://www.kaggle.com/mianwang1024",
   "tier": "Competitions Master",
   "competitions_rank": {
-    "current": 166,
+    "current": 173,
     "of_about": 217000,
     "peak": 139
   },
   "sources": {
-    "rank_and_teams": "Live Kaggle profile and GetCompetition (userRank, teamCount), read 2026-10-14",
-    "end_date": "GetCompetition deadline field (UTC date), read 2026-10-14",
+    "rank_and_teams": "Live Kaggle profile and GetCompetition (userRank, teamCount), read 2026-10-16",
+    "end_date": "GetCompetition deadline field (UTC date), read 2026-10-16",
     "entry": "Kaggle team membership for each competition (solo = one-person team)"
   },
   "domains": [
@@ -57,7 +57,7 @@
       "title": "Kaggriculture",
       "short": "Kaggriculture: Farm-Economy Sim",
       "medal": "bronze",
-      "rank": 771,
+      "rank": 765,
       "teams": 10148,
       "entry": "solo",
       "end_date": "2026-10-14",

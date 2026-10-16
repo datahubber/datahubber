@@ -19,7 +19,7 @@ These repos were rebuilt in 2026 with AI coding agents working under my directio
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/medal-board-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/medal-board-light.svg">
-  <img alt="Kaggle Competitions Master: 1 gold, 3 silver, 9 bronze. Global competitions rank 166 of about 217k, peak 139, checked 2026-10-14. Full table below." src="assets/medal-board-light.svg" width="870">
+  <img alt="Kaggle Competitions Master: 1 gold, 3 silver, 9 bronze. Global competitions rank 173 of about 217k, peak 139, checked 2026-10-16. Full table below." src="assets/medal-board-light.svg" width="870">
 </picture>
 
 <!-- medal-board:end -->
@@ -33,7 +33,7 @@ These repos were rebuilt in 2026 with AI coding agents working under my directio
 |---|---|---|--:|--:|---|--:|---|
 | LLM &amp; NLP | [WSDM Cup: Chatbot Arena](https://www.kaggle.com/competitions/wsdm-cup-multilingual-chatbot-arena) · [repo](https://github.com/datahubber/wsdm-cup-5th-place-llm-judge) | Gold | 5&nbsp;/&nbsp;950 | 0.5% | Team | 2025 | Owned the inference notebook behind one of the two final submissions: vLLM serving of the fine-tuned Qwen2.5-14B judge on 2×T4, plus an uncertainty-gated post-processor. Wrote the public solution write-up and presented it at the winners' call. |
 |  | [Deep Past: Akkadian to English](https://www.kaggle.com/competitions/deep-past-initiative-machine-translation) | Bronze | 252&nbsp;/&nbsp;2,674 | 9.4% | Solo | 2026 | Multi-candidate decoding and MBR reranking for ByT5 Akkadian-to-English translation, tuned through a logged ablation series. |
-| Agents | [Kaggriculture: Farm-Economy Sim](https://www.kaggle.com/competitions/kaggriculture) | Bronze | 771&nbsp;/&nbsp;10,148 | 7.6% | Solo | 2026 | Game-playing agent: an opponent-aware lookahead planner plus a market arbitrage found in the game engine's source (win rate 69.9% to 81.0% on 458 replayed games), tested with a replay harness that holds opponents' recorded moves fixed. |
+| Agents | [Kaggriculture: Farm-Economy Sim](https://www.kaggle.com/competitions/kaggriculture) | Bronze | 765&nbsp;/&nbsp;10,148 | 7.5% | Solo | 2026 | Game-playing agent: an opponent-aware lookahead planner plus a market arbitrage found in the game engine's source (win rate 69.9% to 81.0% on 458 replayed games), tested with a replay harness that holds opponents' recorded moves fixed. |
 | Vision &amp; 3D imaging | [ISIC 2024: Skin Cancer Detection](https://www.kaggle.com/competitions/isic-2024-challenge) | Silver | 99&nbsp;/&nbsp;2,739 | 3.6% | Solo | 2024 | Final ensemble of three gradient-boosted tabular and image-model pipelines. |
 |  | [Vesuvius Challenge: Ink Detection](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection) | Silver | 46&nbsp;/&nbsp;1,249 | 3.7% | Team | 2023 |  |
 |  | [Biohub: Cell Tracking](https://www.kaggle.com/competitions/biohub-cell-tracking-during-development) | Bronze | 204&nbsp;/&nbsp;3,947 | 5.2% | Team | 2026 |  |

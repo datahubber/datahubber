@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="870" height="546" viewBox="0 0 870 546" role="img" aria-labelledby="t d">
 <title id="t">Kaggle Competitions Master: 13 medals</title>
-<desc id="d">gold WSDM Cup - Multilingual Chatbot Arena 5/950 team 2025; bronze Deep Past Challenge - Translate Akkadian to English 252/2674 solo 2026; bronze Kaggriculture 771/10148 solo 2026; silver ISIC 2024 - Skin Cancer Detection with 3D-TBP 99/2739 solo 2024; silver Vesuvius Challenge - Ink Detection 46/1249 team 2023; bronze Biohub - Cell Tracking During Development 204/3947 team 2026; bronze CSIRO - Image2Biomass Prediction 197/3805 solo 2026; bronze BYU - Locating Bacterial Flagellar Motors 2025 62/1136 solo 2025; silver NFL Big Data Bowl 2026 - Prediction 66/1899 solo 2026; bronze HMS - Harmful Brain Activity Classification 200/2767 team 2024; bronze Jane Street Real-Time Market Data Forecasting 259/3757 team 2025; bronze Hull Tactical - Market Prediction 366/3677 solo 2026; bronze CIBMTR - Equity in post-HCT Survival Predictions 322/3325 solo 2025</desc>
+<desc id="d">gold WSDM Cup - Multilingual Chatbot Arena 5/950 team 2025; bronze Deep Past Challenge - Translate Akkadian to English 252/2674 solo 2026; bronze Kaggriculture 765/10148 solo 2026; silver ISIC 2024 - Skin Cancer Detection with 3D-TBP 99/2739 solo 2024; silver Vesuvius Challenge - Ink Detection 46/1249 team 2023; bronze Biohub - Cell Tracking During Development 204/3947 team 2026; bronze CSIRO - Image2Biomass Prediction 197/3805 solo 2026; bronze BYU - Locating Bacterial Flagellar Motors 2025 62/1136 solo 2025; silver NFL Big Data Bowl 2026 - Prediction 66/1899 solo 2026; bronze HMS - Harmful Brain Activity Classification 200/2767 team 2024; bronze Jane Street Real-Time Market Data Forecasting 259/3757 team 2025; bronze Hull Tactical - Market Prediction 366/3677 solo 2026; bronze CIBMTR - Equity in post-HCT Survival Predictions 322/3325 solo 2025</desc>
 <style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;fill:#1f2328;font-size:12.5px}.h1{font-size:18px;font-weight:600}.sub{fill:#59636e}.hd{fill:#6e7781;font-size:10.5px;font-weight:600;letter-spacing:.06em}.dom{font-size:12px;font-weight:600}.s2{fill:#59636e;font-size:12px}.num{font-variant-numeric:tabular-nums}.tick,.foot{fill:#6e7781;font-size:11px}.cnt{font-weight:600}</style>
 <rect width="100%" height="100%" fill="#ffffff"/>
 <g transform="translate(20,20)">
@@ -8,7 +8,7 @@
 <line x1="734" y1="90" x2="734" y2="456" stroke="#e3e8ed" stroke-width="1" shape-rendering="crispEdges"/>
 <line x1="812" y1="90" x2="812" y2="456" stroke="#e3e8ed" stroke-width="1" shape-rendering="crispEdges"/>
 <text x="0" y="22" class="h1">Kaggle Competitions Master</text>
-<text x="0" y="44" class="sub">13 medals · global competitions rank 166 of ~217k, peak 139 · live profile checked 2026-10-14</text>
+<text x="0" y="44" class="sub">13 medals · global competitions rank 173 of ~217k, peak 139 · live profile checked 2026-10-16</text>
 <circle cx="602.0" cy="17.5" r="5" fill="#bf8a0b"/>
 <text x="612" y="22"><tspan class="cnt">1</tspan> gold</text>
 <circle cx="674.0" cy="17.5" r="5" fill="#8a939d"/>
@@ -58,9 +58,9 @@
 <text x="176" y="166" class="">Kaggriculture: Farm-Economy Sim</text>
 <text x="402" y="166" class="s2 num">2026</text>
 <text x="440" y="166" class="s2">Solo</text>
-<circle cx="774.5" cy="162" r="5.5" fill="#a04e2a" stroke="#ffffff" stroke-width="2"/>
-<text x="578" y="166" class="num" text-anchor="end">771 / 10,148</text>
-<text x="632" y="166" class="s2 num" text-anchor="end">7.6%</text>
+<circle cx="773.6" cy="162" r="5.5" fill="#a04e2a" stroke="#ffffff" stroke-width="2"/>
+<text x="578" y="166" class="num" text-anchor="end">765 / 10,148</text>
+<text x="632" y="166" class="s2 num" text-anchor="end">7.5%</text>
 <circle cx="112.0" cy="196" r="5" fill="#8a939d"/>
 <text x="122" y="200" class="s2">Silver</text>
 <text x="176" y="200" class="">ISIC 2024: Skin Cancer Detection</text>
